@@ -68,6 +68,11 @@ public class Calculadora_IU extends javax.swing.JFrame {
         });
 
         jButton4.setText("DIVICION");
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -137,6 +142,13 @@ public class Calculadora_IU extends javax.swing.JFrame {
         double mltp = nro1 * nro2;
         JOptionPane.showMessageDialog(null, "La multiplicacion es: " + mltp);
     }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        double nro1 = Double.parseDouble(txtNro1.getText());
+        double nro2 = Double.parseDouble(txtNro2.getText());
+        double dvd = nro1 / nro2;
+        JOptionPane.showMessageDialog(null, "La divicion es: " + dvd);
+    }//GEN-LAST:event_jButton4ActionPerformed
 
     /**
      * @param args the command line arguments
